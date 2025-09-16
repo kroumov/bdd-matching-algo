@@ -19,4 +19,5 @@ Bipartite Graph Representation: The problem is represented as a bipartite graph,
 Cost Matrix: The algorithm operates on a square cost matrix where each element C(i, j) represents the cost of assigning doctor i to residency j.
 Implementation: The notebook contains a Python implementation of the Hungarian Algorithm, which includes steps such as row reduction, column reduction, and finding the optimal solution through a series of augmenting paths.DependenciesThis notebook requires a standard Python environment with the following libraries:numpy, scipy (for a pre-built implementation, if you choose to compare your manual implementation to a library solution)matplotlib (optional, for visualizing the data or results)You can install these dependencies using pip:
 
-```pip install numpy scipy matplotlib
+```bash
+pip install numpy scipy matplotlib
