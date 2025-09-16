@@ -8,6 +8,21 @@ This project focuses on matching doctors to residency positions.
 
 The assignment problem is a fundamental concept in combinatorial optimization. It seeks to find a one-to-one mapping between two sets of equal size (e.g., a set of doctors and a set of residency positions) to minimize the total cost or maximize the total value of the assignments.
 
+## How the Algorithm Work
+The standard Hungarian algorithm is designed to solve the assignment problem for a balanced, square cost matrix (n workers to n jobs). To adapt it for the medical residency matching problem, which is inherently unbalanced (m doctors to n residency positions, where m > n), the problem must be transformed.
+
+This is achieved through the following procedure:
+
+Matrix Expansion: The original m x n preference matrix, where rows represent doctors and columns represent residency programs, is transformed into an n x n square matrix. This is necessary because the algorithm requires an equal number of agents and tasks.
+
+Column Duplication: For residency programs with multiple available slots (e.g., a program has k positions), the corresponding column in the preference matrix is duplicated k-1 times. Each duplicate column is an identical copy, representing an additional, identical slot at the same program.
+
+Introduction of Dummy Rows: To complete the square matrix, a set of (n - m) dummy rows are added. These rows represent hypothetical "unassignment" options for the surplus doctors.
+
+Cost Assignment for Dummy Placeholders: The cost (or rank value) assigned to a doctor being matched to a dummy position is not arbitrary. It is systematically derived from the doctor's composite qualification score—a quantitative metric aggregating relevant criteria such as academic performance (e.g., GPA), scores on standardized exams (e.g., USMLE), strength of letters of recommendation, and assessed personal qualities. This could be any stats. A higher qualification score  ("lottery number") results in a lower cost (or higher preference rank) for the dummy assignment. Consequently, a more highly qualified doctor incurs a greater penalty for being unassigned, making them less likely to be matched to a dummy slot and thus more likely to receive a real residency position in the optimal assignment.
+
+In essence, the algorithm is configured to minimize the total cost of the assignment, which now includes the penalty of leaving a highly qualified doctor unmatched, ensuring an optimal and equitable distribution of available residency positions.
+
 ## How to Use This Notebook
 
 Open the Notebook: Launch Jupyter Notebook and open the file hungarian_algorithm_biomed.ipynb.Run the Cells: Execute the cells in sequential order. The notebook is designed to be a step-by-step guide through the algorithm's implementation.Modify the Data: You can modify the input data (the cost matrix) to test the algorithm with different scenarios. The input data represents the "preferences" or "costs" of assigning doctors to specific residencies. A lower cost means a more desirable match. 
