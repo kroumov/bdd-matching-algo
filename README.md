@@ -35,8 +35,8 @@ Follow the Interactive Setup: The program will guide you through importing three
 
 Choose Import Method: For each file, select your preferred import option:
 
-Option 1: Import from raw GitHub URL
-Option 2: Import from local file path
+- Option 1: Import from raw GitHub URL
+- Option 2: Import from local file path
 
 ## Interpret the Results: 
 
