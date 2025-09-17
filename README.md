@@ -29,13 +29,16 @@ Run the Program: Execute the Python script resident_hospital_problem.py in your 
 Follow the Interactive Setup: The program will guide you through importing three required CSV files:
 
 File 1: Doctor-Residency Rankings (preferences matrix)
+
 File 2: Number of Positions per Residency
+
 File 3: Doctor Statistics (for lottery number calculation)
 
 
 Choose Import Method: For each file, select your preferred import option:
 
 Option 1: Import from raw GitHub URL
+
 Option 2: Import from local file path
 
 ## Interpret the Results: 
