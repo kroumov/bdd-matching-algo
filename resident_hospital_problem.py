@@ -71,7 +71,7 @@ def import_csv_files(num_files=3):
   print(f'Please Import in Order:')
   print('1. Doctor-Residency Rankings')
   print('2. Number of Residency Positions')
-  print('3. Doctor Statistics in their respective order,)
+  print('3. Doctor Statistics in their respective order')
   print('=====================================================================================================')
 
   dataframes = []
