@@ -23,22 +23,19 @@ Cost Assignment for Dummy Placeholders: The cost (or rank value) assigned to a d
 
 The algorithm's goal is to subtract values from rows and columns to create a matrix full of zeros. If we can assign each worker to a job with a cost of zero in this new matrix, we've found the optimal assignment for the original matrix. In essence, the algorithm is configured to minimize the total cost of the assignment, which now includes the penalty of leaving a highly qualified doctor unmatched, ensuring an optimal and equitable distribution of available residency positions. 
 
-### How to Use This Program
+## How to Use This Program
 
 Run the Program: Execute the Python script resident_hospital_problem.py in your preferred Python environment (Jupyter Notebook, Google Colab, or local Python installation).
 Follow the Interactive Setup: The program will guide you through importing three required CSV files:
 
-File 1: Doctor-Residency Rankings (preferences matrix)
-
-File 2: Number of Positions per Residency
-
-File 3: Doctor Statistics (for lottery number calculation)
+- File 1: Doctor-Residency Rankings (preferences matrix)
+- File 2: Number of Positions per Residency
+- File 3: Doctor Statistics (for lottery number calculation)
 
 
 Choose Import Method: For each file, select your preferred import option:
 
 Option 1: Import from raw GitHub URL
-
 Option 2: Import from local file path
 
 ## Interpret the Results: 
