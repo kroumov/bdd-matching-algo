@@ -67,7 +67,7 @@ def import_from_local():
 #Lillian
 #UI to import files
 def import_csv_files(num_files=3):
-  print(f'CSV File Importer for Google Colab - Import {num_files} Files\n')
+  print(f'CSV File Importer - Import {num_files} Files\n')
   print(f'Please Import in Order:')
   print('1. Doctor-Residency Rankings')
   print('2. Number of Residency Positions')
