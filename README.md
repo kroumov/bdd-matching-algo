@@ -40,10 +40,17 @@ Choose Import Method: For each file, select your preferred import option:
 
 ## Interpret the Results: 
 
-The final output of the notebook will be the optimal assignment of doctors to residencies and the total cost (or value) of this assignment.Key Components of the Code
+The final output of the notebook will be the optimal assignment of doctors to residencies and the total cost (or value) of this assignment.
+
+Key Components of the Code
+
 Bipartite Graph Representation: The problem is represented as a bipartite graph, with one set of vertices representing doctors and the other representing residencies. The edges between them contain weights corresponding to the cost of an assignment.
+
 Cost Matrix: The algorithm operates on a square cost matrix where each element C(i, j) represents the cost of assigning doctor i to residency j.
-Implementation: The notebook contains a Python implementation of the Hungarian Algorithm, which includes steps such as row reduction, column reduction, and finding the optimal solution through a series of augmenting paths.DependenciesThis notebook requires a standard Python environment with the following libraries:numpy, scipy (for a pre-built implementation, if you choose to compare your manual implementation to a library solution)matplotlib (optional, for visualizing the data or results)You can install these dependencies using pip:
+
+Implementation: The script contains a Python implementation of the Hungarian Algorithm, which includes steps such as row reduction, column reduction, and finding the optimal solution through a series of augmenting paths. You can also run the program in a notebook.
+
+Dependencies: This notebook requires a standard Python environment with the following libraries:numpy, scipy (for a pre-built implementation, if you choose to compare your manual implementation to a library solution)matplotlib (optional, for visualizing the data or results)You can install these dependencies using pip:
 
 ```bash
 pip install numpy scipy matplotlib
