@@ -72,7 +72,7 @@ def import_csv_files(num_files=3):
   print('1. Doctor-Residency Rankings')
   print('2. Number of Residency Positions')
   print('3. Doctor Statistics')
-  print('=====================================================================================================')
+  print('================================================================')
 
   dataframes = []
   for i in range(num_files):
