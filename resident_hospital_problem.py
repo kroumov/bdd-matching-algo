@@ -68,7 +68,10 @@ def import_from_local():
 #UI to import files
 def import_csv_files(num_files=3):
   print(f'CSV File Importer for Google Colab - Import {num_files} Files\n')
-  print(f'Please Import Doctor-Residency Rankings, Number of Positions per Residency, and/or Doctor Statisitcs')
+  print(f'Please Import in Order:')
+  print('1. Doctor-Residency Rankings')
+  print('2. Number of Residency Positions')
+  print('3. Doctor Statistics in their respective order,)
   print('=====================================================================================================')
 
   dataframes = []
